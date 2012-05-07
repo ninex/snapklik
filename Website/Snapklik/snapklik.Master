@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="snapklik.master.cs" Inherits="Snapklik.snapklik" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>snapklik</title>
+    <link href="style/snapklik.css" rel="stylesheet" type="text/css" />
+    <link href="images/icon.png" rel="SHORTCUT ICON" /> 
+</head>
+<body>
+    <div class="logo">
+        <img alt="snapklik logo" src="images/logo.jpg" />
+    </div>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="snapliteline" style="height: 0px; width: 100%; clear: both;" />
+    <form id="mainform" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="main" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
